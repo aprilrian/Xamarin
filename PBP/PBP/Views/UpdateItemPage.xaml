@@ -1,0 +1,19 @@
+<!-- UpdateItemPage.xaml -->
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PBP.Views.UpdateItemPage"
+             Title="Update Item">
+
+    <ContentPage.Content>
+        <!-- Add your UI elements for updating item details -->
+        <StackLayout>
+            <!-- Example: Entry fields for Text and Description -->
+            <Entry Placeholder="Text" Text="{Binding Text}" />
+            <Entry Placeholder="Description" Text="{Binding Description}" />
+
+            <!-- Button to trigger the update command -->
+            <Button Text="Update Item" Command="{Binding UpdateItemCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
